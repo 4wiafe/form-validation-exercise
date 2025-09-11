@@ -27,3 +27,44 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  width: 70%;
+}
+
+input,
+select {
+  width: 70%;
+  padding: 5px;
+  display: block;
+  margin-bottom: 15px;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  background: #567eb9;
+  color: #fff;
+  font-size: 1rem;
+}
