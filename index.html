@@ -8,7 +8,31 @@
 </head>
 <body>
   <div class="form-container">
-    
+    <form class="form" novalidate>
+      <label for="email">Enter your email</label>
+      <input type="email" name="email" id="email" required>
+      <span class="error"></span>
+      <label for="country">Choose a country</label>
+      <select name="country" id="country" required>
+        <option value="Ghana">Ghana</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Egypt">Egypt</option>
+        <option value="China">China</option>
+        <option value="Japan">Japan</option>
+        <option value="Spain">Spain</option>
+      </select>
+      <span class="error"></span>
+      <label for="postal-code">Postal code</label>
+      <input type="text" name="postal-code" id="postal-code">
+      <span class="error"></span>
+      <label for="password">Create a password</label>
+      <input type="password" name="password" id="password" required>
+      <span class="error"></span>
+      <label for="confirm-password">Confirm password</label>
+      <input type="password" name="confirm-password" id="confirm-password">
+      <span class="error"></span>
+      <button type="submit">Submit</button>
+    </form>
   </div>
 
   <script src="script.js"></script>
