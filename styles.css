@@ -68,3 +68,9 @@ button {
   color: #fff;
   font-size: 1rem;
 }
+
+.error {
+  margin-top: -8px;
+  color: #ff6347;
+  display: none;
+}
