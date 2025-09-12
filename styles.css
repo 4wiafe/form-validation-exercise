@@ -52,6 +52,8 @@ select {
   margin-bottom: 15px;
   border: 1px solid #afafaf;
   border-radius: 4px;
+  font-size: inherit;
+  color: inherit;
 }
 
 input:focus,
