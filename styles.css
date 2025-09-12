@@ -74,3 +74,11 @@ button {
   color: #ff6347;
   display: none;
 }
+
+input:focus:valid {
+  border: 1px solid #0faf0f;
+}
+
+input:focus:invalid {
+  border: 1px solid #ff6347;
+}
