@@ -42,6 +42,17 @@ function showPasswordError() {
   }
 }
 
+function showConfirmPasswordError() {
+  const message = errorMessages[3];
+
+  if (confirmPassword.value !== password.value) {
+    message.textContent = "Password does not match.";
+    message.classList.add("active");
+  } else {
+    message.classList.remove("active");
+  }
+}
+
 emailInput.addEventListener("input", showEmailError);
 country.addEventListener("input", showCountryError);
 password.addEventListener("input", showPasswordError);
@@ -52,4 +63,5 @@ form.addEventListener("submit", (event) => {
   showEmailError();
   showCountryError();
   showPasswordError();
+  showConfirmPasswordError();
 });
