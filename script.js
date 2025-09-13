@@ -31,12 +31,25 @@ function showCountryError() {
   }
 }
 
+function showPasswordError() {
+  const message = errorMessages[2];
+
+  if (password.value.length < 8) {
+    message.textContent = "Password must be at least 8 characters.";
+    message.classList.add("active");
+  } else {
+    message.classList.remove("active");
+  }
+}
+
 emailInput.addEventListener("input", showEmailError);
 country.addEventListener("input", showCountryError);
+password.addEventListener("input", showPasswordError);
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   showEmailError();
   showCountryError();
+  showPasswordError();
 });
